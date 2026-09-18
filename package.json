@@ -1,0 +1,18 @@
+{
+  "name": "Aula-01",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "debug": "",
+  "scripts": {
+    "dev": "node --experimental-strip-types --watch src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.18.0",
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "typescript": "~5.5.4"
+  }
+}
