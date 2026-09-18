@@ -8,6 +8,8 @@ export class ContaBancaria {
     constructor(numeroDaConta: string, titular: string, saldo: number, saldoCaixinha: number) {
         this.numeroDaConta = numeroDaConta
         this.titular = titular
+        this.saldo = saldo
+        this.saldoCaixinha = saldoCaixinha
     }
 
     // Método para depósito 
@@ -69,16 +71,13 @@ export class ContaBancaria {
         \n titular: ${this.titular}   
         \n numeroDaConta: ${this.numeroDaConta} 
         \n saldo: ${this.getValorSaldoConta()} 
-        \n saldoCaxinha: ${this.getValorSaldoCaixinha()};
-    }
+        \n saldoCaxinha: ${this.getValorSaldoCaixinha()}`);
+    
 
- 
 }
 
-const carro1 = new Carro('Siena', 'HFC0907', 2013);
-const carro2 = new Carro('Palio', 'HFC0910', 2010);
+const conta1 = new ContaBancaria('HFC0907','Adriana',  2000, 1000);
+const conta2 = new ContaBancaria('HFC0910','Carlos',  2010, 0);
 
-carro1.getInfoCarro();
-carro2.getInfoCarro();
-carro1.getLigarCarro();
-carro1.getDesligarCarro();
+conta1.verSaldo();
+conta2.verSaldo();
